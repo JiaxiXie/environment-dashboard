@@ -23,8 +23,11 @@ fs.createReadStream(csvFilePath)
         console.log('CSV file successfully processed');
     });
 
+app.get('/', (req, res) => {
+    res.send('Server is running');
+});
+
 app.get('/api/data', (req, res) => {
-    res.send("Server is running");
     res.json(data);
 });
 

@@ -61,6 +61,15 @@ const Dashboard = () => {
     return dataPoint;
   });
 
+  const renderAbbreviatedXAxisTick = ({ x, y, payload }) => {
+    const abbreviatedLabel = payload.value.slice(0, 3); // Take the first three characters
+    return (
+      <text x={x} y={y} dy={16} textAnchor="end" fill="#666">
+        {abbreviatedLabel}
+      </text>
+    );
+  };
+
   return (
     <div>
       <h1>Environmental Metrics Dashboard</h1>
@@ -106,7 +115,7 @@ const Dashboard = () => {
                     <h3>{metric['']}</h3>
                     <LineChart width={400} height={300} data={chartData}>
                       <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="month" />
+                      <XAxis dataKey="month" interval={2} tick={renderAbbreviatedXAxisTick} />
                       <YAxis />
                       <Tooltip />
                       <Legend />

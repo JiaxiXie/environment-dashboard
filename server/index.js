@@ -24,6 +24,7 @@ fs.createReadStream(csvFilePath)
     });
 
 app.get('/api/data', (req, res) => {
+    res.send("Server is running");
     res.json(data);
 });
 

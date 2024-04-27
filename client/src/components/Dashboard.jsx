@@ -30,7 +30,7 @@ const Dashboard = () => {
 
   const fetchMetrics = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/data');
+      const response = await axios.get('https://environment-dashboard-server.vercel.app/api/data');
       setMetrics(response.data);
     } catch (error) {
       console.error('Error fetching metrics:', error);
@@ -45,7 +45,7 @@ const Dashboard = () => {
 
   const handleSave = async () => {
     try {
-      await axios.put('/api/data', metrics);
+      await axios.put('https://environment-dashboard-server.vercel.app/api/data', metrics);
       console.log('Metrics saved successfully');
     } catch (error) {
       console.error('Error saving metrics:', error);

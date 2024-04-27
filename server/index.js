@@ -8,9 +8,7 @@ const csvFilePath = path.join(__dirname, 'factory_data.csv');
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.use(cors({
-    origin: 'https://environment-dashboard-client.vercel.app'
-}));
+app.use(cors());
 
 let data = [];
 

@@ -17,14 +17,12 @@ The Environment Dashboard is a web application that visualizes environmental dat
    - When a user makes changes to the data in the table and click "Save" button, the corresponding chart below automatically updates to reflect the modifications.
    - This real-time synchronization ensures that the charts always display the most up-to-date information based on the data in the table.
 
-## Getting Started
+## Getting Started to Run Locally
 
 To run the Environment Dashboard locally, follow these steps:
 
 1. Clone the repository
 3. Install the dependencies: `npm install`
-
-## Instructions
 
 To run the Environment Dashboard application, follow these steps:
 
@@ -50,6 +48,8 @@ To run the Environment Dashboard application, follow these steps:
 3. **Access the Application**:
    - Open your web browser and visit: `http://localhost:3000`
    - The Environment Dashboard application should now be accessible and ready to use.
+
+## Directly Run through Link `https://environment-dashboard-client.vercel.app/`
 
 ## Contact
 

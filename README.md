@@ -48,8 +48,14 @@ To run the Environment Dashboard application, follow these steps:
 3. **Access the Application**:
    - Open your web browser and visit: `http://localhost:3000`
    - The Environment Dashboard application should now be accessible and ready to use.
+## Direct Access
 
-## Directly Run through Link `https://environment-dashboard-client.vercel.app/`
+You can directly access the deployed Environment Dashboard application through the following link:
+
+[https://environment-dashboard-client.vercel.app/](https://environment-dashboard-client.vercel.app/)
+
+Simply click on the link or copy and paste it into your web browser to access the application.
+
 
 ## Contact
 

@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://environment-dashboard-server.vercel.app'
 }));
 
 let data = [];
